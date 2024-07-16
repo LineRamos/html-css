@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url(001.fonts/love-larry.ttf) format('truetype');
+             /* Se tivesse mais de um formato, poderia acrescentar aqui. Era só colocar uma vírgula depois de Format() e repetir a URL e o FORMAT. */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Tipos de Format()
+            - opentype (.otf)
+            - truetype (.ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typograph)
+            - svg
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Love', 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta magni nisi, ipsum voluptatem aperiam ullam debitis sapiente voluptates, eum praesentium placeat in illum minus eaque incidunt quasi labore unde.</p>
+
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum molestias praesentium dicta earum, deleniti repudiandae molestiae amet soluta facilis id quae minima, placeat veniam? In ducimus incidunt magnam doloribus. Doloribus.</p>
+
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo architecto hic perspiciatis quam sequi praesentium suscipit iusto reprehenderit, nulla sunt voluptates ut, sint est excepturi, eius sed animi consequatur provident!</p>
+</body>
+</html>

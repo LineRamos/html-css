@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block; /* Informa que ao executar o que foi orientado para a tag <p>, deve mostrar o seu conteúdo */
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p> <!--Para esse texto esconder, precisa ir em style e usar o seletor "div > p {}" (o símbolo de > informa que a tag, no caso p,  é "filha" do div e deve seguir as informações que foram acrescentadas-->
+    </div>
+    <p>Fim do exemplo!</p>
+</body>
+</html>

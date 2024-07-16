@@ -1,0 +1,33 @@
+@charset "UTF-8"; /* Lembrar que essa regra deve ser criada para acompanhar caracteres e símbolos especiais */
+
+* { /* Configuração global */
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100%; */  /* No começo, essa configuração deu erro */
+}
+
+body{
+    background-image: linear-gradient(to right, #05C7F2, #05DBF2);
+}
+
+main {
+    background-color: white;
+    border-radius: 10px; /* Para que a caixa tennha uma borda arredondada */
+    box-shadow: 5px 5px 15px #03648abe;
+    width: 600px; /* Para criar uma espaço de borda ou recuo, para o texto não aparecer todo esparramado pela página */
+    padding: 10px; /* Para que tenha uma borda dentro dessa "caixa" branca do texto */
+    margin: auto; /* Para que esse bloco apareça de forma centralizada na página, independente do tamanho da janela. */
+}
+
+h1{
+    color: #D9AD77;
+    text-align: center; /* Para posicionar o texto */
+    text-shadow: 1px 1px 2px #997952d0; /* Pegou a cor original do texto e trabalhou a monocromia e transparência. */
+}
+
+h2{
+    color: #05DBF2; /* Caso alguma dessas cores ficassem meio "apagadas", poderia utilizar um recurso que é trabalhar numa escala abaixo, como se fosse uma mini-escala monocromática. Porém, para não fugir da aula e do uso das paletas, o ideal é tentar usar cores que estejam dentro da paleta. */
+}
+
+p{
+    text-align: justify;
+}

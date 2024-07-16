@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tags HTML</title>
+</head>
+<body>
+    <h1>Tags em HTML</h1>
+    <p>Em HTML5, podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual tag deverá utilizar em cada caso (para isso deve usar a tag <strong><u>&lt;abbr&gt;</u></strong>).</p>
+    <p>Nessa página, algumas funções também podem aparecer caso coloque o cursor em cima do que procura (normalmente são termos que tem sublinhado pontilhado).</p>
+    <ul type="square"> <!--Por padrão já vem com marcador em CÍRCULOS ("disc"), mas pode mudar para QUADRADOS ("square") ou CÍRC. VAZIO ("circle")-->
+        <li><abbr title="Use a tag <p>">Parágrafos</abbr></li> <br>
+        <li><abbr title="Digitar de <h1> até <h6>">Títulos</abbr></li> <br>
+        <li><abbr title="Use a tag (pode somente começar a escrevar sem o &lt; &gt;) <img> e em SRC informa o local da imagem (pressionando CTRL + ESPAÇO) e ALT é a explicação ">Imagens</abbr></li> <br>
+
+        <li><abbr title="Com a tag <abbr>, coloca o texto que explica o significado das letras">Abreviações</abbr> - também pode ser utilizado para colocar explicações como aparecem nesse desafio</li> <br>
+
+        <li><abbr title="Para adicionar EMOJIs">EMOJIs</abbr> - Para acrescentar, precisa iniciar com "<strong>&#x</strong>". <br> Após esse começo, deve acrescentar o código referente ao emoji desejado. <br> Para pesquisar, pode acessar o site <a href="http://www.emojipedia.org" target="_blank" rel="external">EMOJIPEDIA.ORG</a> <br> Escolhe o emoji, clica nele e procura a aba "Technical Information" e acrescenta ao código, a informação "CODEPOINTS" (sem o U+): <strong>&#x</strong> + CODEPOINTS (escreve tudo junto).</li> <br>
+
+        <li><abbr title="Usa a tag <code>">Códigos-fonte</abbr> - é uma forma de demonstrar o (s) código (s) que deseja compartilhar, porém com uma forma estética, onde é possível visualizar de pronto do que se trata. <code>Como aqui por exemplo, onde a aparência da fonte é diferente.</code></li> <br>
+
+        <li><abbr title="Use a tag <ol> e <li>">Listas numeradas</abbr> - também chamadas de LISTAS ORDENADAS. <br> Por padrão, a lista é numérica, iniciada em 1. Porém, tem opções de escolher, adicionando o parâmetro "type=" que mostrará as opções. <br> Cada item da lista deve estar denro da tag <strong>&lt;li&gt;</strong>.</li>
+        <ol type="A">
+                <li>Um</li>
+                <li>Dois</li>
+                <li>Três</li>
+            </ol> <br>
+
+        <li><abbr title="Usa a tag <ul> e <li>">Listas com demarcadores</abbr> - são listas onde não tem hierarquia. Por padrão já vem com marcador em CÍRCULOS ("disc"), mas pode mudar para QUADRADOS ("square") ou CÍRC. VAZIO ("circle"). <br> Cada item da lista deve estar denro da tag <strong>&lt;li&gt;</strong>.</li> <br>
+
+        <li><strong>Negrito</strong> - esse recurso dá mais significado (do ponto de vista de conteúdo para páginas HTML5). Normalmente, usam a tag &lt;b&gt;, porém essa aplicação não dá conteúdo ao texto da página HTML5.</li> <br>
+
+        <li><abbr title="Usa a tag <em>"><em>Itálico</em></abbr> - essa tag tem o nome de ênfase, justamente por ser um recurso que vai servir como um conteúdo a mais para o HTML5, ao invés da tag &lt;i&gt;.</li> <br>
+
+        <li><u><abbr title="Usa a tag <u>">Sublinhado</abbr></u> - essa tag é considerada como não-semântica (pois não agrega conteúdo de fato ao HTML5).</li> <br>
+
+        <li>Texto com <abbr title="Usa a tag <big>">letras <big>maiores</big></abbr> ou <abbr title="Usa a tag <small>">letras <small>menores</small></abbr>.</li> <br>
+
+        <li><abbr title="Usa a tag <mark>"><mark>Marca</mark>-<mark style="background-color: brown;">texto</mark></abbr> - a cor do marcado pode ser alterada no HTML (como quero alterar de forma pontual, como está em "texto"), mas também pode ser melhor arrumada com as CSS</li>            
+        <dd>
+         <ul>
+            <li>Para isso, depois de "mark", acrescenta STYLE e escolhe "background-color" e a cor desejada.</li>
+            <li>Inclusive, para fazer esse recuo, utiliza a tag &lt;dd&gt;</li>
+         </ul>        
+        </dd>   <br>
+
+        <li>Aparência de <abbr title="Usa a tag <del>">texto <del>deletado</del></abbr>, <abbr title="Usa a tag <ins>">texto <ins>inserido</ins></abbr> ou <abbr title="Usa a tag <u>">texto <u>sublinhado</u></abbr></li> <br>
+
+        <li>Aparência de <abbr title="Usa a tag <sup>">texto sobrescrito</abbr> (exemplo: a<sup>2</sup>+b<sup>5</sup>) e <abbr title="Usa a tag <sub>">texto subescrito</abbr> (exemplo: H<sub>2</sub>O<sub>2</sub>).</li> <br>
+
+        <li><abbr title="Usa a tag <q>">Citação simples</abbr> - além de ser uma forma de agregar um conteúdo para aquela página, serve como uma opção d uso das aspas.</li>        
+            <dd><strong>Exemplo:</strong> <q cite="https://www.bibliaon.com/versiculo/filipenses_4_13/">Eu tudo posso naquele que me fortalece.</q> (Filipenses 4:13)</dd> <br>
+
+        <li><abbr title="Usa a tag <blokquote>">Citações completas</abbr> - o conceito da aplicação dessa tag é semelhante ao caso de citações de textos com mais de quatro linhas (de acordo com a ABNT). <br> Caso deseje, pode colocar o parâmetro "cite=" onde pode informar o link de onde foi retirado ou para indicar onde pode comprar.</li>
+            <p>Exemplo: <br> <blockquote cite="https://www.bibliaonline.com.br/acf/1co/13"> <sup>1</sup> Ainda que eu falasse as línguas dos homens e dos anjos, e não tivesse amor, seria como o metal que soa ou como o sino que tine. <br> <sup>2</sup> E ainda que tivesse o dom de profecia, e conhecesse todos os mistérios e toda a ciência, e ainda que tivesse toda a fé, de maneira tal que transportasse os montes, e não tivesse amor, nada seria(1 Coríntios 13:1,2).</blockquote></p> <br>
+
+        <li>Lista de definição ("Definition list") - para fazer um dicionário (por exemplo), onde vai colocar um TERMO (<strong>tag &lt;dt&gt;</strong>) e a sua DEFINIÇÃO/DESCRIÇÃO (<strong>tag &lt;dd&gt;</strong>). </li>                
+    </ul><br>
+   <p>Essas duas listas e demais tags, podem ser misturadas de acordo com a necessidade de organização.</p> 
+   <p>Outra informação interessante é saber como acrescentar os links que podem ser:
+    <ul>
+        <li>Links externos</li>
+        <li>Links internos</li>
+        <li>Links para download</li>
+    </ul>
+    <p>Para serem criados, precisam de "<abbr title="Usa a tag <a>">âncoras</abbr>" (que é a tag <strong>&lt;a&gt;</strong>). Onde nessas âncoras tem toda a referência para informar se o link é externo, interno ou para download.</p>
+        
+    <p><strong>OBS.:</strong> Caso n saiba ainda qual será o link, pode digitar "#", pois significa que esse link está vazio.</p>
+
+    <li><strong>Links externos</strong> - &lt;a href="https://gustavoguanabara.github.io" target="_blank" rel="external"&gt;</q> <br> 
+        Em <strong>href=" "</strong> coloca o site ***** <strong>target=" "</strong> coloca <strong>_blank</strong> para que a página do link abra em outra aba (fazendo com que o usuário não saia da minha página) ***** <strong>rel=" "</strong> coloca <strong>external</strong> para sinalizar que aquele link é externo.</li> <br>
+
+    <li><strong>Links internos</strong> - &lt;a href="pag002.html "rel="next"&gt; <br> 
+        Em <strong>href=" "</strong> coloca o local onde se encontra o arquivo da página (pode pressionar CTRL + ESPAÇO e consegue visualizar as opções) (recomenda-se que as páginas estejam em pastas organizadas de acordo com a hierarquia, o que pode ser visto com esse atalho citado antes) ***** <strong>rel=" "</strong> coloca <strong>next</strong> para sinalizar que aquele link interno está localizado depois daquela página. Caso fosse uma página anterior, estaria escrito "prev". </li> <br>
+
+    <li><strong>Links para download</strong> - tem duas formas de fazer o uso:
+        <ul type="circle">
+            <li>Para baixar um arquivo "normal" - exemplo: <strong>&lt;a href="livro/Nome do livro.pdf" download="Nome do livro.pdf" type="application/pdf"&gt;</strong></li>
+            <p>Em <strong>href=" "</strong> coloca o local onde se encontra o arquivo da página (pode pressionar CTRL + ESPAÇO e consegue visualizar as opções) (recomenda-se que as páginas estejam em pastas organizadas de acordo com a hierarquia, o que pode ser visto com esse atalho citado antes) ***** Em <strong>download=" "</strong> coloca o nome do arquivo com a extensão. ***** Em <strong>type=" "</strong> deve informar o tipo de mídia ou "media types" (para saber mais, olhar a <strong>OBS</strong> que vem logo abaixo).</p>
+
+            <li>Para baixar um arquivo compactado - exemplo: <strong>&lt;a href="livro/Nome do arquivo compactado.rar" download="Nome do arquivo compactado.rar" type="application/zip"&gt;</strong></li>
+            <p>Em <strong>href=" "</strong> coloca o local onde se encontra o arquivo compactado da página (pode pressionar CTRL + ESPAÇO e consegue visualizar as opções) (recomenda-se que os arquivos compactados estejam em pastas organizadas de acordo com a hierarquia, o que pode ser visto com esse atalho citado antes) ***** Em <strong>download=" "</strong> coloca o nome do arquivo com a extensão. ***** Em <strong>type=" "</strong> deve informar o tipo de mídia ou "media types" (para saber mais, olhar a <strong>OBS</strong> que vem logo abaixo).</p>
+
+            <p><strong>OBS.:</strong> Os media types são parâmetros utilizados para sinalizar que tipo de arquivo está disponibilizado para download (como aqui é o caso de downloads). Existe uma relação de "mediatypes" que é acessada no site do <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="next" >IANA</a> (pode buscar também no Google por "<strong>iana assignments media types</strong>").</p>
+        </ul>
+    </li>
+   </p>
+</body>
+</html>

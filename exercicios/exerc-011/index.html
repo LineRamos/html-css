@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>      
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <p>PRIMERA FORMA DE INSERIR O ÁUDIO:</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio><!--Se acrescentar o MUTED (como fiz na aplicação abaixo), e ele dá a opção de mutar o áudio (no controle do volume)-->
+    <!--Formatos de mídia que são mais comuns: MP3, WAV e OGG.-->
+    <p>SEGUNDA FORMA DE INSERIR O ÁUDIO:</p>
+    <audio preload="auto" autoplay muted controls> <!--Na pág. 6 do PDF dessa aula tem uma lista dos diferentes "types", de acordo com a mídia.--> <!--Aqui acrescentei o MUTED, e ele dá a opção de mutar o áudio (no controle do volume)-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!--O navegador busca o áudio pela ordem que foi adicionada a página. Nesse caso, 1º o MP3, dps OGG e dps WAV.-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"> 
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--Esse formato deve ser evitado, pois é o formato que costuma ser o mais pesado de todos.-->
+         <!--Nesse caso, não temos  o arquivo convertido, mas estamos usando como exemplo, pois em alguns navegadores pode não ter compatibilidade com um só tipo de áudio, logo, se tiver convertido para diferentes formatos, pode acrescentar no HTML5-->
+        <p> <!--Caso o navegador não tenha compatibilidade com os formatos adicionados a página, vai aparecer a mensagem:-->Infelizmente o seu navegador não consegue reporduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>

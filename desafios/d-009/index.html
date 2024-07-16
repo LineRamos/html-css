@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style> <!--Para que a página fique igual ao desafio, tive que alterar a cor de fundo das páginas, assim como a cor das letras, só não sei ainda como centralizar a página, mas será assunto de próximas aulas-->    
+    <title>Meus vídeos</title>
+</head>
+<body>
+    <h1>Vídeos legais para assistir</h1>
+    <p>Vou tentar de duas formas diferentes para inserir as imagens com links.</p>
+    <p>Em ambos os casos, funcionam da mesma forma. <br> Acho que a 1ª tentativa é melhor, porque tem que digitar menos informações, ou seja, fica com um texto mais limpo, direto, sem muitoooos códigos. </p> <!--Em ambos os casos, para ficar 2 quadrados por linha, envelopei as tags das imagens dentro de um parágrafo, para que cada uma faça parte de uma linha. Apesar que prefiro sem o parágrafo (por isso, coloquei o TENTATIVA 1-b).-->
+
+    <h2>Tentativa 1</h2>
+    <p>Somente com a tag IMG</p>
+
+    <p><strong>Tentativa 1-a</strong>: para separar as linhas, envelopei dentro de um  &lt p &gt, separando a 1ª linha da 2ª.</p>
+
+    <p>
+        <a href="pagcurso-01.html" rel="next"> <img src="imagens/thumb001-html.png" alt="Thumb do curso de HTML5"> </a>
+        <a href="pagcurso-02.html" rel="next"> <img src="imagens/thumb002-js.png" alt="Thumb do curso de JavaScript"> </a> 
+    </p>
+    
+    <p>
+        <a href="pagcurso-03.html" rel="next"> <img src="imagens/thumb003-hardware.png" alt="Thumb do curso de Hardware"> </a>
+        <a href="pagcurso-04.html" rel="next"> <img src="imagens/thumb004-python.png" alt="Thumb do curso de Python"> </a>
+    </p>
+
+    <p><strong>Tentativa 1-b</strong>: para separar as linhas, envelopei dentro de um  &lt p &gt, porém para separar as linhas, coloquei um  &lt br &gt. Gosto mais desse jeito, porque não fica um espaçamento grande entre as linhas.</p>
+
+    <p>
+        <a href="pagcurso-01.html" rel="next"> <img src="imagens/thumb001-html.png" alt="Thumb do curso de HTML5"> </a>
+        <a href="pagcurso-02.html" rel="next"> <img src="imagens/thumb002-js.png" alt="Thumb do curso de JavaScript"> </a> 
+        
+        <br>
+        <a href="pagcurso-03.html" rel="next"> <img src="imagens/thumb003-hardware.png" alt="Thumb do curso de Hardware"> </a>
+        <a href="pagcurso-04.html" rel="next"> <img src="imagens/thumb004-python.png" alt="Thumb do curso de Python"> </a>
+    </p>    
+
+    <h2>Tentativa 2</h2>
+    <p>Com a tag PICTURE</p>
+    <picture> <!--Para adicionar um link interno, tive que criar as páginas referente a cada imagem, para ser redirecionado para o local correto-->
+        <p>
+            <a href="pagcurso-01.html" rel="next"> <img src="imagens/thumb001-html.png" alt="Thumb do curso de HTML5"> </a>
+            <a href="pagcurso-02.html" rel="next"> <img src="imagens/thumb002-js.png" alt="Thumb do curso de JavaScript"> </a>
+        </p>
+        
+        <p>
+            <a href="pagcurso-03.html" rel="next"> <img src="imagens/thumb003-hardware.png" alt="Thumb do curso de Hardware"> </a>
+            <a href="pagcurso-04.html" rel="next"> <img src="imagens/thumb004-python.png" alt="Thumb do curso de Python"> </a>
+        </p>     
+    </picture>
+</body>
+</html>

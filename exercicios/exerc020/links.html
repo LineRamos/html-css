@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a { /* Esse seletor vai aplicar alterações para todas as informações que estiverem dentro da tag <a> */ 
+            color: red;
+            text-decoration: none; /* Caso deseje retirar o sublinhado do link */
+            font-weight: bold;
+        }
+
+        a:visited { /* Essa pseudoclasse é referente a links que já foram visitados por aquela máquina */
+            color: darkred;
+        }
+
+        a:hover { /* Para devidir que a aparência mude ao passar o cursor do mouse sobre o conteúdo da tag citada (no caso, é sobre a tag <a> */
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /* Essa pseudoclasse é para quando a área destacada está ativa. No caso, será quando clicar no link (essa é a forma dessa tag ficar ativa). */
+            color: yellow;
+        }
+
+        a::after { /* Quando deseja atribuir algo para os conteúdos de uma determinada tag (no caso, a tag <a>), pode usar esse pseudo-elemento */
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório do GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVideo</a></li>
+    </ul>
+</body>
+</html>

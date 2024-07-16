@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* Em HTML é id    = em CSS é #
+   Em HTML é class = em CSS é .
+*/
+
+body{
+    background-color: rgba(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(4, 109, 0); /* Mesma cor da letra dos h1*/
+    color: white; /* Para que a letra fique branca e tenha destaque*/
+}
+
+h2 {
+    color: rgb(73, 109, 71);
+}
+
+.basico {
+    color: #3c805e;
+    font-weight: bold; /* Foi colocado aqui, só para mostrar que pode dar características diferentes para cada 'class'. */
+}
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}
