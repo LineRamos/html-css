@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#fora { /* Antes era "conteiner" */
+    background-image: url('imagens/espaco.jpg');
+    background-color: blue;
+    background-size: cover; /* Esqueci de colocar esse aqui */
+    background-position: center center; /* Até tentei, mas faltavam informações */
+    position: relative;
+    height: 100vh;
+}
+
+#dentro { /* Antes era "conteudo" */
+    background-image: url('imagens/astronauta.png');
+    position: absolute;
+    background-repeat: no-repeat; /* Esqueci de colocar esse aqui */
+    background-position: center center; /* Até tentei, mas faltavam informações */
+    background-size: contain;
+    height: 50%;
+    width: 50%;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
