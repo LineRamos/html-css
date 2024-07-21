@@ -5,16 +5,22 @@
 * {    
     margin: 0;
     padding: 0;
-    border: 0;    
+    border: 0;
 }
 
 body {
     background-color: white;
+    color: black;
+    font-family: Sriracha;    
+    padding: 30px 0px;    
 }
+
+
 
 header {
     background-color: black;
     padding: 50px;  
+    margin: -30px 0px 30px 0px ;
     margin-bottom: 30px;
 
     color: white;
@@ -51,15 +57,10 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-main {
-    background-color: white;
-    color: black;
-    font-family: Sriracha;
+section > p {
     font-size: 3em;
-    padding: 30px 50px;
-    margin-bottom: 130px;
+    padding: 10px 50px;
+
 }
 
 .fundo-branco {
@@ -69,7 +70,7 @@ main {
 .joaninha {
     background-image: url(imagens/background001.jpg);
     background-size: cover;
-    margin: 100px 0px;
+    margin: 130px 0px;
     padding: 30px 0px;
 }
 
@@ -77,6 +78,7 @@ main {
     height: 600px;
     width: 560px;
     color: white;
+    font-size: 3em;   
     background-image: linear-gradient( to right, #001100 80%, #021602);
     margin: 30px;
     padding: 5px;
@@ -93,6 +95,7 @@ main {
     height: 600px;
     width: 570px;
     color: white;
+    font-size: 3em;   
     background-color: rgba(54, 51, 51, 0.78);
     background-position: right top;
     margin: 30px;
@@ -106,8 +109,8 @@ main {
 footer {
     background-color: black;
     color: white;
+    font-size: 1em;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
     padding: 10px;
 }
