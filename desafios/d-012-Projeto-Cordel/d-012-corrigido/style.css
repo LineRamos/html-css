@@ -1,24 +1,31 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive';
+}
 
 * {    
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
-
+    font-family: var(--fonte1);
 
     color: black;
-    font-family: Sriracha;    
+        
     padding: 30px 0px;    
 }
-
-
 
 header {
     background-color: black;
@@ -28,13 +35,14 @@ header {
     padding: 50px;  
     margin: -30px 0px 30px 0px ;
     margin-bottom: 30px;  
-     
+    
 }
 
 header > h1 {
-    font: bolder 5em Verdana;
-    font-variant: small-caps;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    font-variant: small-caps; /* Para que a 1ª letra tenha um tamanho maior do que as outras letras */
+    font-family: var(--fonte2);
+    font-size: 10vw; /* Sem o midia-Query, é uma alternativa. Dessa forma, peço que a fote tenha 10% da largura da tela. Assim, o tamanho da letra aumenta ou reduz, dependendo do tamanho da tela que se tem. */
 }
 
 h1 > p {
@@ -62,6 +70,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /* Sem o midia-Query, é uma alternativa. Dessa forma, peço que a fote tenha 10% da largura da tela. Assim, o tamanho da letra aumenta ou reduz, dependendo do tamanho da tela que se tem. */
 }
 
 section.normal {
@@ -69,55 +79,15 @@ section.normal {
     color: black;
 }
 
-section.imagem {
+section.imagem {    
     background-color: rgb(51, 51, 51);
     color: white;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
-}
-
-
-
-.joaninha {
-    background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    margin: 130px 0px;
-    padding: 30px 0px;
-}
-
-#joaninha { /* Aqui é tudo referente a caixinha colorida */
-    height: 600px;
-    width: 560px;
-    color: white;
-    font-size: 3em;   
-    background-image: linear-gradient( to right, #001100 80%, #021602);
-    margin: 30px;
-    padding: 5px;
-}
-
-.cartas {
-    background-image: url(imagens/background002.jpg);
-    background-size: cover;
-    margin: 100px 0px;
-    padding: 30px 0px;
-}
-
-#cartas { /* Aqui é tudo referente a caixinha colorida */
-    height: 600px;
-    width: 570px;
-    color: white;
-    font-size: 3em;   
-    background-color: rgba(54, 51, 51, 0.78);
-    background-position: right top;
-    margin: 30px;
-    padding: 5px;
-}
-
-.espaco {
-    margin-bottom: 100px;
 }
 
 footer {
