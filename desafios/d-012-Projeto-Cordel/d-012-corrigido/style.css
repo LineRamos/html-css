@@ -21,21 +21,12 @@ html, body {
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
-
-    color: black;
-        
-    padding: 30px 0px;    
 }
 
 header {
     background-color: black;
     text-align: center; 
     color: white;
-
-    padding: 50px;  
-    margin: -30px 0px 30px 0px ;
-    margin-bottom: 30px;  
-    
 }
 
 header > h1 {
@@ -74,6 +65,10 @@ section {
     font-size: 3.5vw; /* Sem o midia-Query, é uma alternativa. Dessa forma, peço que a fote tenha 10% da largura da tela. Assim, o tamanho da letra aumenta ou reduz, dependendo do tamanho da tela que se tem. */
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -82,12 +77,25 @@ section.normal {
 section.imagem {    
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover; /* Para que a imagem apareça de um lado ao outro. */
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
