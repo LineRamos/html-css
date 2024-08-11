@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#fora {
+    background-image: url(imagens/fundo-madeira.jpg);
+    background-size: cover;
+    background-color: purple;
+    height: 100vh;
+    position: relative;    
+}
+
+#dentro {
+    background-image: url(imagens/frame-iphone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    background-position: center center;
+    transform: translate(-50%, -50%);
+    
+    position: absolute;
+}
+
+#home {
+    background-image: url(imagens/logo-home.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 1%;
+    background-position: center center;
+    transform: translate(-97%, -1%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+#youtube {
+    background-image: url(imagens/logo-youtube.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 12%;
+    background-position: center center;
+    transform: translate(-97%, -12%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+#github {
+    background-image: url(imagens/logo-github.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 23%;
+    background-position: center center;
+    transform: translate(-97%, -23%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+#instagram {
+    background-image: url(imagens/logo-instagram.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 34%;
+    background-position: center center;
+    transform: translate(-97%, -34%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+#twitter {
+    background-image: url(imagens/logo-twitter.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 45%;
+    background-position: center center;
+    transform: translate(-97%, -45%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+#facebook {
+    background-image: url(imagens/logo-facebook.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    left: 97%;
+    top: 56%;
+    background-position: center center;
+    transform: translate(-97%, -56%);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+
+    border-radius: 50px 50px;
+}
+
+iframe {
+    display: inline-block;
+    border: none;
+
+    background-image: url(imagens/tela-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 242px;
+    height: 432px;
+
+
+    left: 50%;
+    top: 51%;
+    background-position: center center;
+    transform: translate(-50%, -51%);
+    
+    position: absolute;
+    overflow: hidden;
+}
+
+iframe#celular::-webkit-scrollbar {
+    display: initial;
+}
+
+a:hover { /* Tenho que ver como deslocar para cima o botão, ao colocar o cursor em cima do ícone */
+    border: 1px solid white;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.483);
+    
+}
