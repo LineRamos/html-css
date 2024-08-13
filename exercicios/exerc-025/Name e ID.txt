@@ -1,0 +1,19 @@
+INPUTS (COMPONENTE DE ENTRADA) E OS ATRIBUTOS "NAME" E "ID":
+
+Na maioria dos tipos de input para formulários (componentes de entrada de dados), é necessário ter os atributos "name" e "id"... Ao inserir um componente, por padrão esses dois atributos já acompanham a tag de input. Você pode dar a mesma nomenclatura para ambos se quiser.
+
+Sobre o parâmetro " name ", de certa maneira ele serve para identificar um elemento, assim como o parâmetro "id" faz...
+
+De forma geral, pode-se dizer que:
+
+ID: O id é importante para o browser (front-end), para a manipulação do DOM (arvore do documento), CSS e usado para criar o VÍNCULO entre a nossa label e o seu respectivo componente.
+
+NAME: O name é importante para o servidor/linguagens de programação (back-end) e o HTML.
+
+O name é principalmente usado para elementos do tipo input em forms, ou seja para campos de inserção de dados e é exatamente o name que identifica no servidor o campo.
+
+Vale lembrar que o valor do id deve ser único para cada documento, já o valor do name pode ocorrer mais de uma vez por documento. 
+
+Obs.: Como foi dito, o atributo name é muito usado na parte do servidor nas linguagens de programação, entretanto ele é mais útil especificamente para algumas linguagens, como o PHP por exemplo... Já para linguagens como o JavaScript, o id é mais utilizado, mesmo sendo para o servidor... (No JS até dá para identificar e puxar o campo usando o name, mas o id é o considerado padrão para a linguagem).
+
+Dessa maneira, entenda que você sempre precisa identificar todos os inputs (componentes de entrada) do formulário com um name e com um id, ambos tem suas funções. (a única exceção para isso seria o botão de submissão, que mesmo sendo um input não necessita desses atributos de identificação, visto que não recebe dados e não tem etiqueta).
