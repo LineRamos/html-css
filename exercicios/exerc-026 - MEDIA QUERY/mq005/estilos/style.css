@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+/* Lembrar de converter o MENU para o formato de HAMBURGUINHO no Mobile */
+
+body {
+    background-color: lightgray;
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+    
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+    background-color: rgb(80, 80, 80);
+    border-top: 2px solid #808080;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul :hover {
+    background-color: #808080;
+}
+
+main {
+    padding: 5px 10px;
+}
+
+article {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+article h1 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    padding: 10px;
+    text-indent: 1.5em;
+}
