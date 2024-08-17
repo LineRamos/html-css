@@ -3,7 +3,7 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-O meu perfil é esse <a href="https://github.com/LineRamos">aqui</a>.
+O meu perfil no GitHub é esse <a href="https://github.com/LineRamos">aqui</a>.
 
 A página inicial da seção de HTML/CSS é essa <a href="https://lineramos.github.io/html-css/">aqui</a>, depois acrescento o restante do caminho para a pasta/página desejada.
 
