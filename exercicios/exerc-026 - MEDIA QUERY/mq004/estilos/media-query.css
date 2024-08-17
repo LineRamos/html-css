@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Pesquisar por: Typical Device Breakpoints (tem recomendações dadas pela W3C)
+Pequenas telas: até 600px
+Celular: + de 600px até 768px
+Tablet: + de 768px até 992px
+Desktop: + de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/* Todas as configurações iniciais da página, já foramd determinadas pelo estilo do Mobile First, e as demais as "herdam" */
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg); /* é desnecessário, porque n se imprime */
+        
+    }
+
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline; /* Uma linha acima do texto */
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; } /* Deixo "BLOCK" referente ao tam de tela */
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    main::after {
+        content: 'Versáo para Tablet'; /* Não tinha isso na aula, tenho q ver como centralizar */
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: block; } /* Deixo "BLOCK" referente ao tam de tela */
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) { /* DESKTOP / PC */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main::after {
+        content: 'Versáo para Desktop / PC'; /* Não tinha isso na aula, tenho q ver como centralizar */
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; } /* Deixo "BLOCK" referente ao tam de tela */
+    img#tv { display: none; }
+}
+
+@media screen and (min-width:1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px; /* Para mudar o tamanho do quadrado da tela de TV */
+    }
+
+    main::after {
+        content: 'Versáo para TV / Grandes telas'; /* Não tinha isso na aula, tenho q ver como centralizar */
+    }
+
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; } /* Deixo "BLOCK" referente ao tam de tela */
+}
