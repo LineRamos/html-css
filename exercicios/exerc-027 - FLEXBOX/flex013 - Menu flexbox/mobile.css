@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+header, header > nav {
+    flex-flow: column nowrap; /* Assim mudo a direção dos itens dentro do menu (ou em comparação com o título) na largura de tela mínima */
+}
+
+header > h1 {
+    flex-basis: 50px;
+}
+
+header > nav > a{
+    width: 90vw;
+}
+
