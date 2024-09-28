@@ -18,15 +18,42 @@ body{
 header{
     background-color: gray;
     color: white;
-    padding: 10px;    
+    padding: 10px;
+    
+    display: flex;
+    flex-flow: row wrap; /* O wrap é para organizar como o menu vai ficar a medida que diminui a tela */
+    justify-content: space-between; /* para que o menu fique a direita, com um espaço entre o Site e o menu */
+    align-items: center;
 }
 
 header > h1 {
-    border: 1px dotted black;
+    border: 1px dotted black; /* A borda pontilhada vai ajudar para entender melhor sobre a aula */
+
+    flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dotted black;
+    border: 1px dotted black; /* A borda pontilhada vai ajudar para entender melhor sobre a aula */
+
+    display: flex; /* Para que ele se torne um item flexível - virando um flexbox dentro de outro */
+    flex-flow: row wrap;
+    justify-content: flex-end; /* Para que a quebra aconteça no final (pela direita) */
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main{
